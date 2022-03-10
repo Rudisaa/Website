@@ -1,0 +1,51 @@
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+.my-logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.56rem;
+}
+
+.my-logo a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu div {
+    width: 25px;
+    height: 2px;
+    background-color: aqua;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
