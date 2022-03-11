@@ -5,8 +5,12 @@
 }
 
 body {
-    background-color: #DEE5E5;
+    background-color: #080705;
     font-family: 'Montserrat', sans-serif;;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #FFFFFA !important;
 }
 
 .my-logo {
@@ -17,7 +21,7 @@ body {
 
 .my-logo a {
     text-decoration: none;
-    color: #FF2E00;
+    color: #A50104;
 }
 nav {
     display: flex;
@@ -27,7 +31,6 @@ nav {
     min-height: 10vh;
     position: fixed;
     z-index: 1;
-    background-color: #423E3B;
 }
 
 .nav-links {
@@ -41,14 +44,11 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #9DC5BB;
+    color: #FFFFFA;
 }
 
-.nav-links a:active {
-    color: #5448C8;
-}
 .nav-links a:hover {
-    color: #DEE5E5;
+    color: #912f40;
 }
 
 .mobile-menu {
@@ -58,7 +58,7 @@ nav {
 .mobile-menu div {
     width: 25px;
     height: 2px;
-    background-color: black;
+    background-color: #FFFFFA;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -70,7 +70,7 @@ nav {
     align-items: center;
     width: auto;
     height: 300px;
-    color: #2c2b31;
+    color: #FFFFFA;
     text-transform: uppercase;
 }
 
@@ -84,6 +84,7 @@ nav {
     margin: 0 auto;
     align-items: center;
     width: 30vw;
+    color: #FFFFFA;
 }
 
 .about-container h1 {
@@ -94,13 +95,29 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vw;
     width: 100%;
+    color: #FFFFFA;
 }
+
+.foot-container{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.foot-container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFA;
+}
+
+
 
 @media screen and (max-width: 768px){
     body {
         overflow-x: hidden;
+        background-color: #080705;
     }
     .nav-links {
         position: absolute;
@@ -112,7 +129,7 @@ nav {
         height: 95vh;
         top: 8vh;
         transform: translateX(100%);
-        background-color: black;
+        background-color: #080705;
         transition: transfrom 0.5s ease-in;
         z-index: 999;
     }
@@ -159,5 +176,7 @@ nav {
          transform: translateX(0px);
      }
 }
+
+
 
  
