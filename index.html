@@ -28,7 +28,7 @@
         </div>
     </nav>
     <div id="fullpage">
-        <section class="section s1">
+        <section class="section home" id="home">
             <div class="home-container">
                 <h2>Hello, My name is</h2>
                 <h1>Rudi Argueta</h1>
@@ -36,13 +36,13 @@
 
             </div>
         </section>
-        <section class="section s2">
+        <section class="section about">
             <div class="about-container">
-                <h1>About-me</h1>
+                <h1>About Me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam soluta, magni quisquam neque exercitationem sint nisi accusamus architecto consequatur perspiciatis laborum voluptate ipsum. Eos similique cupiditate quo facere, necessitatibus laudantium?</p>
             </div>
         </section>
-        <section class="section s3">
+        <section class="section contact">
             <h1>Contact-Me</h1>
             
         </section>
@@ -55,6 +55,20 @@
         </ul>
     </footer>
     <script src="fullpage.js"></script>
+    <script src="three.r119.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+    VANTA.NET({
+        el: "#home",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+      })
+</script> 
     <script src="app.js"></script>
 </body>
 </html>
