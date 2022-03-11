@@ -1,6 +1,9 @@
 new fullpage("#fullpage", {
     autoScrolling: true,
-    navigation: true
+    navigation: true,
+    menu: '#nav-menu',
+    anchors: ['home-page', 'about-pg', 'contact-pg'],
+    navigaionPosition: 'right'
 });
 
 const navAnimation = () => {
