@@ -7,10 +7,6 @@ new fullpage("#fullpage", {
     parrallax: true
 });
 
-$(document).on('click', '#about-pg', function(){
-    fullpage_api.moveTo('#about-me', 1);
-  });
-
 const navAnimation = () => {
     const mobileMenu = document.querySelector('.mobile-menu');
     const nav = document.querySelector('.nav-links');
