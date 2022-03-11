@@ -4,6 +4,10 @@
      box-sizing: border-box;
 }
 
+body {
+    background-color: #e3e4dd;
+}
+
 .my-logo {
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -12,7 +16,7 @@
 
 .my-logo a {
     text-decoration: none;
-    color: black;
+    color: #CF7E3B;
 }
 nav {
     display: flex;
@@ -22,6 +26,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     z-index: 1;
+    background-color: #2c2b31;
 }
 
 .nav-links {
@@ -35,7 +40,14 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #7f7e7e;
+}
+
+.nav-links a:active {
+    color:#a33e24;
+}
+.nav-links a:hover {
+    color: #e3e4dd
 }
 
 .mobile-menu {
@@ -57,7 +69,8 @@ nav {
     align-items: center;
     width: auto;
     height: 300px;
-    color: black;
+    color: #2c2b31;
+    text-transform: uppercase;
 }
 
 .home-container h1 {
@@ -70,6 +83,10 @@ nav {
     margin: 0 auto;
     align-items: center;
     width: 30vw;
+}
+
+.about-container h1 {
+    text-transform: uppercase;
 }
 
 .contact-container {
