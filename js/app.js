@@ -1,8 +1,8 @@
 new fullpage("#fullpage", {
     autoScrolling: true,
     navigation: true,
-    menu: '#nav-menu',
     anchors: ['home-page', 'about-page', 'contact-page'],
+    menu: '#nav-menu',
     navigaionPosition: 'right',
     parrallax: true,
     responsiveWidth: 768
