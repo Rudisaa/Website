@@ -49,3 +49,17 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 300px;
+    color: black;
+}
+
+.home-container h1 {
+    font-size: 3rem;
+}
