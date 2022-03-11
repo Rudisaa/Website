@@ -15,7 +15,7 @@ body {
 
 .my-logo {
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 1.56rem;
 }
 
@@ -23,6 +23,7 @@ body {
     text-decoration: none;
     color: #912f40;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -89,6 +90,10 @@ nav {
 
 .about-container h1 {
     text-transform: uppercase;
+}
+
+.about-container p {
+    text-align: center;
 }
 
 .contact-container {
