@@ -1,3 +1,3 @@
 # Website
 
-this website uses my html, css and some javascript. Trying to improve my skills by making this website
+This is a website I'm making with html, css and some javascript. This website is to test my skill, to learn more, and improve.
