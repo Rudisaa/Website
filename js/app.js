@@ -4,7 +4,8 @@ new fullpage("#fullpage", {
     menu: '#nav-menu',
     anchors: ['home-page', 'about-page', 'contact-page'],
     navigaionPosition: 'right',
-    parrallax: true
+    parrallax: true,
+    responsiveWidth: 768
 });
 
 const navAnimation = () => {
