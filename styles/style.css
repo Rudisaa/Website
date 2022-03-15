@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #080705;
+    background-color: #131313;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,10 +45,15 @@ nav {
 
 .nav-links a {
     text-decoration: none;
+    text-transform: uppercase;
     color: #FFFFFA;
 }
 
 .nav-links a:hover {
+    color: #912f40;
+}
+
+#nav-menu li:active {
     color: #912f40;
 }
 
@@ -81,19 +86,27 @@ nav {
 
 .about-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin: 0 auto;
     align-items: center;
-    width: 30vw;
+    width: 100vw;
     color: #FFFFFA;
 }
 
 .about-container h1 {
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .about-container p {
     text-align: center;
+    width: 600px;
+    margin-top: 40px;
+}
+
+.about-container img {
+    width: 10vw;
+    height: auto;
 }
 
 .contact-container {
@@ -101,15 +114,16 @@ nav {
     justify-content: center;
     align-items: center;
     width: auto;
-    color: #FFFFFA;
+    height: 100vh;
+    color: #080705;
 }
 
 form {
+    background-color: #FFFFFA;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 90vw;
-    max-width: 600px;
+    width: 1000px;
 }
 
 form input, form textarea {
@@ -118,6 +132,9 @@ form input, form textarea {
     margin: 10px 0px;
     padding: 10px;
     font-size: 1rem;
+    background-color: #FFFFFA;
+    box-shadow: inset 6px 6px 12px #f5f5f0,
+    inset -6px -6px 12px #ffffff;
 
 }
 
@@ -130,6 +147,9 @@ form button {
     font-size: 1rem;
     outline: none;
     cursor: pointer;
+    background: linear-gradient(145deg, #ffffff, #e6e6e1);
+    box-shadow:  5px 5px 10px #e8e8e4,
+             -5px -5px 10px #ffffff;
 
 }
 
@@ -162,11 +182,11 @@ form button {
 @media screen and (max-width: 768px){
     body {
         overflow-x: hidden;
-        background-color: #080705;
+        background-color: #131313;
     }
 
     nav {
-        background-color: #080705;
+        background-color: #131313   ;
     }
     .nav-links {
         position: absolute;
@@ -178,9 +198,8 @@ form button {
         height: 95vh;
         top: 8vh;
         transform: translateX(100%);
-        background-color: #080705;
-        transition: transfrom 0.5s ease-in;
-        z-index: 999;
+        background-color: #131313;
+        
     }
 
     .nav-links li {
@@ -193,9 +212,18 @@ form button {
     }
     
     .home-container {
-        height: 80vh;
+        height: 100vh;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+      
+    }
+
+    .home-container h1 {
+        font-size: 2.8rem;
     }
 
     .about-container {
@@ -203,11 +231,29 @@ form button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
+        margin: 0 auto;
+    }
+    
+    .about-container p {
+        width: 300px;
+    }
+
+    .about-container img {
+        height: auto;
+        width: 35vw;
     }
 
     .contact-container {
+        display: flex;
         flex-direction: column;
+    }
+
+    .contact-container form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+
     }
 }
 
