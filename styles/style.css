@@ -160,6 +160,9 @@ form button {
     text-align: center;
 }
 
+.foot-container li {
+    list-style: none;
+}
 .foot-container a {
     text-decoration: none;
     text-transform: uppercase;
