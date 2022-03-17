@@ -231,12 +231,17 @@ body, html {
         text-transform: uppercase;
         background-color: #B6465F;
         color: #fff;
+        z-index: 999;
         
         a {
             text-decoration: none;
             color: #fff;
         }
         
+    }
+
+    button:active {
+        background-color: #BF1A2F;
     }
 }
 #contact-page {
@@ -507,3 +512,4 @@ footer {
      }
     
 }
+
