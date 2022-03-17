@@ -11,6 +11,7 @@ body, html {
     width: 100%;
 }
 
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -19,6 +20,8 @@ body, html {
     background-color: #131313;
     position: fixed;
     width: 100%;
+    box-shadow: 0px 15px 19px -5px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 0px 15px 19px -5px rgba(0,0,0,0.27);
     z-index: 999;
 
 }
@@ -119,10 +122,6 @@ body, html {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .home-content {
-    
-    }
-
 }
 
 
@@ -200,13 +199,17 @@ body, html {
 
     h2 {
         margin-bottom: 3rem;
-       
+        text-transform: uppercase;
+        font-size: 2rem;
         
     }
 }
 
 #projects {
-    background-color: #6E8898;
+    position: relative;
+    height: 180%;
+    background-color: #131313;
+    color: #fff;
 }
 
 .project-header {
@@ -219,7 +222,8 @@ body, html {
     h2 {
         margin: 2rem 0;
         border-bottom: 2px solid #131313;
-        font-size: 3rem;
+        font-size: 2rem;
+        text-transform: uppercase;
     }
 
     p {
@@ -232,8 +236,8 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
-    margin-bottom: 5rem;
-    border: 1px solid #131313;
+    margin-bottom: 3rem;
+    border: 1px solid #fff  ;
 }
 
 .project-img {
@@ -269,17 +273,15 @@ body, html {
     }
 }
 #contact-page {
-    height: 100%;
-    width: 100%;
 
     form {
-        background-color: #FFFFFA;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         padding: 2vw 4vw;
-        width: 1000px;
+        width: 80%;
+        text-transform: uppercase;
     }
 }
 
@@ -287,11 +289,25 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
+    width: 95%;
+    margin: 1rem auto 0 auto;
 
     input, textarea {
         padding: 1rem;
         margin: 1rem 0;
         width: 80%;
+    }
+
+    button {
+        width: 10rem;
+        margin-top: 2rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-color: #B6465F;
+        color: #fff;
     }
 }
 
@@ -302,6 +318,27 @@ body, html {
     flex-direction: column;
 
     h2 {
-        margin: 2rem 0;
+        margin-top: 4rem;
+    }
+
+}
+
+.project-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+        position: relative;
+        width: calc(156% + 1.3px);
+        height: 150px;
+    }
+
+    .shape-fill {
+        fill: #fff;
     }
 }
