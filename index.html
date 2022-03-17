@@ -47,22 +47,52 @@
     </section>
     <section id="projects">
         <div class="container">
+            <div class="project-header">
+                <h2>Projects</h2>
+                <p>This is an ongoing list of projects. I plan to keep this updated and to display the better projects as I develop my skills even further.</p>
+            </div>
+            <div class="project-content">
+                <div class="project-row">
+                    <div class="project-img">
+                        <img src="./img/website1.png" alt="a picture of my first website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>This project was a portfolio website were I created using fullpage.js. I also used vanta.js for the background. There was nothing too complex about it. It was good practice for my HTML, CSS, and JS.</p>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div class="project-img">
+                        <img src="./img/adviceimg.png" alt="a picture of adviceimg">
+                    </div>
+                    <div class="project-info">
+                        <h3>Advice API</h3>
+                        <p>This project from Front End Mentor required me to create a site that displays the data(advice) from an API. During these project I ran into some stumbling blocks but I managed to figure out about fetch and adding data to a variable and inserting it into a HTML element.
+                        </p>
+                        <button> <a href="https://rudisaa.github.io/AdvicePg/" target="_blank">Link</a></button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
     <section id="contact-page">
         <div class="container"></div>
-            <div class="project-content">
-                <div class="project-row">
-                    <div class="project-img">
-                        
-                    </div>
-                    <div class="project-info">
-
-                    </div>
-                </div>
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <p>Please feel free to contact me with a question or anything related to Web Development</p>
             </div>
-
+            <div class="form-container">
+                <form action="https://formspree.io/f/xjvlrapq" method="POST" return="" false;="">
+                    <h4>Get in Touch</h4>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" name="name " required="">
+                    <input type="email" id="email" placeholder="Your Email" name="email" required="">
+                    <input type="text" id="phone" placeholder="Your phone number" name="phone" required="">
+                    <textarea id="message" rows="4" placeholder="Your Message" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
     </section>
 <script src="./js/app.js"></script>
 </body>
