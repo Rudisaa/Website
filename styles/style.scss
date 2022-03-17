@@ -41,12 +41,12 @@ body, html {
         font-weight: 700;
         text-transform: uppercase;
         padding: .5rem .5rem;
-        color: #ED1C24;
+        color: #BF1A2F;
         letter-spacing: 4px;
     }
 
     .logo:hover {
-        color: #F1D302;
+        color: #FF6978;
     }
       
 }
@@ -69,9 +69,14 @@ body, html {
         text-align: center;
         font-size: 1.1rem;
         letter-spacing: 1px;
-        color: #fff;
+        color: #BF1A2F;
+    }
+    a:hover {
+        color:#FF6978
     }
 }
+
+
 
 .hamburger {
     display: none;
@@ -359,6 +364,10 @@ footer {
         text-decoration: none;
         color: black;
     }
+
+    a:hover {
+        color:#FF6978;
+    }
 }
 
 @media screen and(max-width: 786px){
@@ -452,6 +461,38 @@ footer {
 
     .links {
         display: none;
+    }
+
+    .form-container {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        input, textarea {
+            width: 12rem;
+        }
+    }
+    
+    .contact-content {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-content {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: .8rem;
+            margin-right: 3rem;
+        }
     }
 
     
