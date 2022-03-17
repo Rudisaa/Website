@@ -342,3 +342,52 @@ body, html {
         fill: #fff;
     }
 }
+
+footer {
+    background-color: #131313;
+    color: white;
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        padding: 0 .2rem;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+
+    .upper-portion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+
+}
+
+.links {
+    color: #fff;
+    z-index: 1;
+    background-color: white;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(-45.4rem);
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 15px 19px -5px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 0px 15px 19px -5px rgba(0,0,0,0.27);
+
+    a {
+        padding: .5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+}
