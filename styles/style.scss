@@ -234,7 +234,9 @@ body, html {
     }
 }
 #contact-page {
-
+    height: 100%;
+    width: 100%;
+    
     form {
         display: flex;
         justify-content: center;
@@ -251,13 +253,17 @@ body, html {
     justify-content: center;
     align-items: center;
     padding: 4rem;
-    width: 95%;
+    width: 80%;
     margin: 1rem auto 0 auto;
+    box-shadow: 0px 15px 19px -5px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 0px 15px 19px -5px rgba(0,0,0,0.27);
+    font-weight: 600;
 
     input, textarea {
         padding: 1rem;
         margin: 1rem 0;
         width: 80%;
+        font-weight: 500;
     }
 
     button {
@@ -277,6 +283,7 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: 700;
 
     h2 {
         margin-top: 4rem;
@@ -321,6 +328,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
+    margin-top: 10rem;
 
     .upper-portion {
         display: flex;
