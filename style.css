@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: #F5F3F4;  
 }
 .container {
     width: 95%;
@@ -15,8 +16,10 @@ body {
 
 #nav-bar {
     align-items: center;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    padding: 1em 3em;
     width: 100%;
 }
 
@@ -29,8 +32,9 @@ body {
 .logo {
     text-decoration: none;
     color: #A61C3C;
-    text-transform: uppercase;
+    font-size: 2rem;
 }
+
 
 .nav-links li {
     list-style: none;
@@ -41,6 +45,16 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-around;
+}
+
+.home-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    text-align: left;
 }
 
 
