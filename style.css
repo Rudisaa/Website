@@ -6,12 +6,15 @@
 
 body {
     background-color: #F5F3F4;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif; 
 }
 .container {
-    width: 95%;
-    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
+    width: 92%;
 }
 
 #nav-bar {
@@ -22,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1em 3em;
+    text-transform: uppercase;
     width: 100%;
 }
 
@@ -57,12 +61,76 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-weight: 800;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+.home-page p {
+    font-weight: 600;
+}
+
+.animation-container {
+    display: flex;
+}
+
+.txt-animation span {
+    display: block;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.txt-animation {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-page {
+    align-items: center;
+    display: flex;
     height: 100vh;
     justify-content: center;
     text-align: left;
 }
 
-.about-page {
+.left-about-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+
+}
+
+.right-about-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+}
+
+
+
+
+
+
+.project-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact-me {
     align-items: center;
     display: flex;
     flex-direction: column;
