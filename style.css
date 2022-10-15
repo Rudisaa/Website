@@ -105,6 +105,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 45%;
+    text-align: center;
 
 }
 
@@ -116,6 +117,15 @@ body {
     width: 45%;
 }
 
+.skill-box {
+    align-items: center;
+    display: flex;
+    background-color: red;
+    height: 2rem;
+    justify-content: center;
+    width: 10rem;
+    text-transform: uppercase;
+}
 
 
 
