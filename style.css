@@ -70,8 +70,13 @@ body {
     
 }
 
+.home-page h1 {
+    font-size: 3rem;
+}
+
 .home-page p {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .animation-container {
