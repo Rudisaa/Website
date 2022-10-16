@@ -5,7 +5,7 @@
  }
 
 body {
-    background-color: #F5F3F4;
+    background-color: #FFFFFF;
     font-family: 'Montserrat', sans-serif; 
 }
 .container {
@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1em 3em;
+    position: fixed;
     text-transform: uppercase;
     width: 100%;
 }
@@ -37,7 +38,7 @@ body {
 
 .logo {
     text-decoration: none;
-    color: #A61C3C;
+    color: #134e4a;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: .1rem;
@@ -65,6 +66,7 @@ body {
     height: 100vh;
     justify-content: center;
     overflow: hidden;
+    max-height: 120rem;
     text-align: left;
     text-transform: uppercase;
     
@@ -77,6 +79,26 @@ body {
 .home-page p {
     font-weight: 700;
     font-size: 2rem;
+}
+
+.projects-button, .contact-button {
+    box-shadow: 1px 14px 29px -14px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 14px 29px -14px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 14px 29px -14px rgba(0,0,0,0.49);
+    border: none;
+    border-radius: .5rem;
+    color: #f0fdfa;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 10rem;
+    text-transform: uppercase;
+}
+.projects-button {
+    background-color: #134e4a;
+}
+.contact-button {
+    background-color: #0f766e;
 }
 
 .animation-container {
@@ -98,16 +120,18 @@ body {
 
 .about-page {
     align-items: center;
-    display: flex;
-    height: 100vh;
+    display: flex;  
     justify-content: center;
     text-align: left;
 }
+
+
 
 .left-about-section {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-weight: 600;
     justify-content: center;
     margin-right: 1rem;
     width: 45%;
@@ -115,27 +139,47 @@ body {
 
 }
 
+
+.left-about-section h2 {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
 .right-about-section {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 1rem;
     width: 45%;
 }
 
-.right-skill-box {
+.right-about-section h2 {
+    text-transform: uppercase;
+}
+
+.top-skill-box{
     align-items: center;
     display: flex;
+    margin: 1rem 0;
     width: 100%;
     justify-content: center;
 }
 
-.skill-box {
+.bottom-skill-box {
     align-items: center;
     display: flex;
-    background-color: red;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-box {
+    align-items: center;
+    background-color: #115e59;
+    border-radius: .5em;
+    color: #f0fdfa;
+    display: flex;
     flex-direction: row;
+    font-weight: 700;
     height: 2rem;
     padding: 1.5rem;
     margin-right: 1rem;
@@ -143,10 +187,6 @@ body {
     width: 10rem;
     text-transform: uppercase;
 }
-
-
-
-
 
 .project-page {
     align-items: center;
