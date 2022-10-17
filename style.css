@@ -197,6 +197,21 @@ body {
     text-align: left;
 }
 
+.etch-card {
+    background-image: url(./img/etchasketchpic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 40rem;
+}
+
+.etch-info {
+    background-color: #FFFFFF;
+    height: 1rem;
+}
+
+
+
 .contact-me {
     align-items: center;
     display: flex;
