@@ -28,6 +28,7 @@ body {
     position: fixed;
     text-transform: uppercase;
     width: 100%;
+    z-index: 999;
 }
 
 .nav-logo {
@@ -67,7 +68,6 @@ body {
     justify-content: center;
     overflow: hidden;
     max-height: 120rem;
-    text-align: left;
     text-transform: uppercase;
     
 }
@@ -204,12 +204,75 @@ body {
     text-align: left;
 }
 
-.etch-info {
-    background-color: #FFFFFF;
-    height: 1rem;
+.project-page-title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.project-card-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-card {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    width: 20rem;
+    height: 26rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
 }
 
 
+.project-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-caption {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+.project-caption h3 {
+    color: #134e4a;
+    margin-bottom: .3rem;
+    text-transform: uppercase;
+}
+
+.project-card:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.project-card button {
+    background-color: #134e4a;
+    border: none;
+    border-radius: .5rem;
+    color: #f0fdfa;
+    margin: 1.5rem 0;
+    padding: .5rem;
+    width: 8rem;
+}
+
+.project-card button:hover {
+    background-color: #34d399;
+}
+
+.project-caption:hover {
+    bottom: 0;
+}
 
 .contact-me {
     align-items: center;
