@@ -122,10 +122,7 @@ body {
     align-items: center;
     display: flex;  
     justify-content: center;
-    text-align: left;
 }
-
-
 
 .left-about-section {
     align-items: center;
@@ -135,7 +132,6 @@ body {
     justify-content: center;
     margin-right: 1rem;
     width: 45%;
-    text-align: center;
 
 }
 
@@ -174,9 +170,9 @@ body {
 
 .skill-box {
     align-items: center;
-    background-color: #115e59;
+    border: .2rem solid #115e59;
     border-radius: .5em;
-    color: #f0fdfa;
+    color: #115e59;
     display: flex;
     flex-direction: row;
     font-weight: 700;
