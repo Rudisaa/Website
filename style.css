@@ -122,10 +122,10 @@ body {
 
 .arrow-down span {
     display: block;
-    width: 1.9rem;
-    height: 1.9rem;
-    border-bottom: .5rem solid #115e59;
-    border-right: .5rem solid #115e59;
+    width: 1.2em;
+    height: 1.2rem;
+    border-bottom: .4rem solid #115e59;
+    border-right: .4rem solid #115e59;
     transform: rotate(45deg);
     margin: -10px;
     animation: scroll 2s infinite;
@@ -172,7 +172,7 @@ body {
     
 }
 
-.about-page {
+#about-page {
     align-items: center;
     display: flex;  
     justify-content: center;
@@ -326,7 +326,7 @@ body {
     text-align: left;
 }
 
-footer {
+.fixed-socials {
     align-items: center;
     bottom: .1rem;
     color: black;
@@ -338,7 +338,7 @@ footer {
     width: 100%;
 }
 
-footer li {
+.fixed-socials li {
     list-style: none;
 }
 
