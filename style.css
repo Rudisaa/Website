@@ -4,6 +4,10 @@
     box-sizing: border-box;
  }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: 'Montserrat', sans-serif; 
@@ -53,13 +57,22 @@ body {
     margin: .5em;
 }
 
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #34d399;
+}
+
 .nav-links {
     align-items: center;
     display: flex;
     justify-content: space-around;
 }
 
-.home-page {
+#home-page {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -69,6 +82,7 @@ body {
     overflow: hidden;
     max-height: 120rem;
     text-transform: uppercase;
+    text-align: center;
     
 }
 
@@ -76,11 +90,11 @@ body {
     color: #134e4a;
 }
 
-.home-page h1 {
+#home-page h1 {
     font-size: 3rem;
 }
 
-.home-page p {
+#home-page p {
     font-weight: 700;
     font-size: 2rem;
 }
@@ -92,6 +106,7 @@ body {
     border: none;
     border-radius: .5rem;
     color: #f0fdfa;
+    cursor: pointer;
     font-weight: 600;
     margin-top: 2rem;
     padding: 1rem;
@@ -101,8 +116,19 @@ body {
 .projects-button {
     background-color: #134e4a;
 }
+
+.projects-button a {
+    color: #f0fdfa;
+    text-decoration: none;
+}
+
 .contact-button {
     background-color: #0f766e;
+}
+
+.contact-button a {
+    color: #f0fdfa;
+    text-decoration: none;
 }
 
 .projects-button:hover {
@@ -153,8 +179,6 @@ body {
     }
 }
 
-
-
 .animation-container {
     display: flex;
 }
@@ -178,6 +202,10 @@ body {
     justify-content: center;
 }
 
+.left-about-section, .right-about-section {
+    margin: 0 3rem;
+}
+
 .left-about-section {
     align-items: center;
     display: flex;
@@ -185,10 +213,9 @@ body {
     font-weight: 600;
     justify-content: center;
     margin-right: 1rem;
-    width: 45%;
+    width: 80%;
 
 }
-
 
 .left-about-section h2 {
     margin-bottom: .5rem;
@@ -238,16 +265,17 @@ body {
     text-transform: uppercase;
 }
 
-.project-page {
+#project-page {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
+    margin-top: 5rem;
     text-align: left;
 }
 
-.project-page-title {
+#project-page-title {
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -256,7 +284,9 @@ body {
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .project-card {
@@ -265,7 +295,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 1.5rem;
+    margin: 1rem .7rem;
     width: 20rem;
     height: 26rem;
     border-radius: 10px;
@@ -289,6 +319,13 @@ body {
     text-align: center;
 }
 
+.project-para {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
 .project-caption h3 {
     color: #134e4a;
     margin-bottom: .3rem;
@@ -303,10 +340,12 @@ body {
     background-color: #134e4a;
     border: none;
     border-radius: .5rem;
+    cursor: pointer;
     color: #f0fdfa;
     margin: 1.5rem 0;
     padding: .5rem;
     width: 8rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .project-card button:hover {
@@ -321,9 +360,40 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 25rem;
     justify-content: center;
     text-align: left;
+}
+
+#contact-me h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#contact-me p {
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.contact-social-list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+.contact-social-list svg{
+    fill: #115e59;
+    width: 100%;
+    height: 5rem;
+    margin: 1rem 1.5rem;
+}
+
+.contact-social-list svg:hover{
+    fill: #34d399;
 }
 
 .fixed-socials {
@@ -362,4 +432,153 @@ body {
     margin: .3rem;
 }
 
+footer {
+    background-color: #134e4a;
+    color: #f0fdfa;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+}
+
+.top-footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.top-footer h2 {
+    margin-bottom: 1rem;
+}
+
+.top-footer p {
+    font-size: .9rem;
+    width: 40%;
+}
+
+
+.footer-social-list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-social-link {
+    width: 100%; 
+}
+
+.footer-social-link svg {
+    fill: #f0fdfa;
+    width: 100%;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.footer-social-link svg:hover {
+    fill: #34d399;
+}
+
+.bottom-footer {
+    align-items: center;
+    display: flex;
+    font-size: .7rem;
+    justify-content: center;
+    width: 74%;
+    border-top: .08rem solid #f0fdfa;
+}
+
+.bottom-footer p {
+    margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 37.5rem) {
+    .nav-links {
+        display: none;
+    }
+
+    #about-page {
+        flex-direction: column;
+    }
+
+    .left-about-section {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    .left-about-section p {
+        width: 90%;
+    }
+
+    #project-page{
+        height: 100%;
+    }
+
+    .project-page-title {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-para {
+        width: 90%
+    }
+
+    .project-card-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        margin: 1rem 0;
+    }
+
+    .fixed-socials {
+        display: none;
+    }
+
+    #contact-me h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    #contact-me p {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contact-social-list {
+        width: 90%;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .top-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-footer p {
+        width: 100%;
+    }
+
+    .top-left h2{
+        margin-top: 2rem;
+    }
+    
+    .top-left {
+        width: 70%;
+    }
+
+    .bottom-footer {
+        height: 5rem;
+    }
+
+}
 
