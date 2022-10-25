@@ -512,13 +512,14 @@ footer {
 
 @media only screen and (max-width: 37.5rem) {
     .nav-links {
+        color: #134e4a;
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 3.5rem;
         flex-direction: column;
-        background-color: #131313;
+        background-color: #FFFFFF;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         text-align: center;
         transition: 0.5s;
     }
@@ -527,23 +528,26 @@ footer {
         margin: 2.5rem 0;
     }
 
-    
+    .nav-links a {
+        color: #134e4a;
+    }
 
     .nav-links.active {
         left: 0;
+        height: 100vh;
     }
 
     .hamburger-menu {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2) {
+    .hamburger-menu.active .hamburger-bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1) {
+    .hamburger-menu.active .hamburger-bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3) {
+    .hamburger-menu.active .hamburger-bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
